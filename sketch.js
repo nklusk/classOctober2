@@ -1,7 +1,21 @@
+let clicks = 0
+let transparency = 1
+
 function setup() {
-  createCanvas(400, 400);
+  noCanvas();
+  //how to make something that has multiple parts
+  //casting a spell
+  let p = createP("TEXT");
+  p.mouseClicked(clicked);
 }
 
-function draw() {
-  background(125);
+function clicked() {
+  transparency = transparency -.1;
+  clicks++;
+  p.style("opacity", transparency)
+  console.log(clicks);
+  if (transparency <= 0) {
+    location.replace(index2.html)
+  }
+
 }

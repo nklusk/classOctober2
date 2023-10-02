@@ -6,3 +6,7 @@ html, body {
 canvas {
   display: block;
 }
+
+p {
+  font-size: xxx-large
+}
